@@ -873,9 +873,34 @@ header {
     }
 
 
+/* =========================================
+   スマホ用：ヘッダーとロゴの調整
+   ========================================= */
+@media screen and (max-width: 768px) {
 
+  header {
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 8px 16px 12px !important;
+    align-items: center;
+  }
 
+  header .logo {
+    display: block;
+    width: 110px !important;
+    max-width: 100%;
+    height: auto;
+  }
 
+  header > a {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .menu-toggle {
+    font-size: 30px;
+    line-height: 1;
+  }
 
 
   
